@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: ПРИВЕТ АНТОХА
 ---
 
 This is a blank Quartz installation.
