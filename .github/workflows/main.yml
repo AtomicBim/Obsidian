@@ -3,7 +3,7 @@ name: Node.js CD # Название workflow (процесса автомати�
 on:
   push:
     branches:
-      -v4 # Триггер: запускать workflow при пуше в ветку main
+      - v4 # Триггер: запускать workflow при пуше в ветку main
 
 jobs:
   build:
