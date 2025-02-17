@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: База знаний АСК Tangl Value
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+[[Начало работы с Tangl Value]]
+[[Что такое Входящие и Проекты в Tangl Value WEB]]
