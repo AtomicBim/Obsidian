@@ -1,5 +1,5 @@
 ---
 title: База знаний АСК Tangl Value
 ---
-[[Начало работы с Tangl Value]]
-[[Что такое Входящие и Проекты в Tangl Value WEB]]
+# 1. [[Начало работы с Tangl Value]]
+# 2. [[Что такое Входящие и Проекты в Tangl Value WEB]]
