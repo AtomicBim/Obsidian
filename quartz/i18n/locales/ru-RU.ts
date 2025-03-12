@@ -33,7 +33,8 @@ export default {
       title: "Проводник",
     },
     footer: {
-      createdWith: "Создал",
+      createdWith: "Создано с помощью",
+      createdBy: "Создал"
     },
     graph: {
       title: "Вид графа",
