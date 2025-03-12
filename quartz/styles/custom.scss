@@ -13,28 +13,4 @@
     
     // Добавляем тонкую рамку для усиления эффекта
     box-shadow: 0 0 0 1px rgba(var(--highlight), 0.5) !important;
-}
-
-// Скрываем логотип "Quartz 4"
-.page-title {
-    display: none !important;
-}
-
-// Скрываем иконку рядом с логотипом (если нужно)
-.page-title + img, .page-title svg, .page-title img {
-    display: none !important;
-}
-
-// Дополнительный вариант, если вышеуказанные селекторы не сработают
-h2.page-title a, h2 a[href="/"] {
-    display: none !important;
-}
-
-// Скрыть весь контейнер с логотипом, если нужно полностью убрать это место
-.sidebar .page-title, header .page-title, div:has(> .page-title) {
-    display: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-}
+  }
