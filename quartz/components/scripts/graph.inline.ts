@@ -383,9 +383,9 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       eventMode: "none",
       text: n.text,
       alpha: 0,
-      anchor: { x: 0.5, y: 1.2 },
+      anchor: { x: 1, y: 2.5 },
       style: {
-        fontSize: fontSize * 15,
+        fontSize: fontSize * 10,
         fill: computedStyleMap["--dark"],
         fontFamily: computedStyleMap["--bodyFont"],
       },
