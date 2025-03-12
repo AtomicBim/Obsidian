@@ -385,7 +385,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       alpha: 0,
       anchor: { x: 1, y: 2.5 },
       style: {
-        fontSize: fontSize * 10,
+        fontSize: fontSize * 12,
         fill: computedStyleMap["--dark"],
         fontFamily: computedStyleMap["--bodyFont"],
       },
