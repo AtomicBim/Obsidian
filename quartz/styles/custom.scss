@@ -1,18 +1,16 @@
 @use "./base.scss";
 
-// Выделение активной страницы в Explorer
-.explorer-item {
-    a[data-active="true"] {
-      background-color: rgba(var(--highlight), 0.4); // Увеличиваем непрозрачность с 0.2 до 0.4
-      font-weight: bold;
-      border-radius: 5px;
-      padding: 2px 6px;
-      
-      // Цвет текста активной страницы сделаем темнее
-      color: rgb(var(--highlight)) !important;
-      text-shadow: 0 0 1px rgba(0,0,0,0.2); // Добавляем легкую тень для лучшей читаемости
-      
-      // Добавляем тонкую рамку для усиления эффекта
-      box-shadow: 0 0 0 1px rgba(var(--highlight), 0.5);
-    }
+// Выделение активной страницы в Explorer с высоким приоритетом
+#explorer-ul .explorer-item a[data-active="true"] {
+    background-color: rgba(var(--highlight), 0.4) !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    padding: 2px 6px !important;
+    
+    // Цвет текста активной страницы сделаем темнее
+    color: rgb(var(--highlight)) !important;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2) !important;
+    
+    // Добавляем тонкую рамку для усиления эффекта
+    box-shadow: 0 0 0 1px rgba(var(--highlight), 0.5) !important;
   }
