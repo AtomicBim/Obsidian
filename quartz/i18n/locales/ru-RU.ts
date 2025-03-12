@@ -34,7 +34,6 @@ export default {
     },
     footer: {
       createdWith: "Создано с помощью",
-      createdBy: "Создал"
     },
     graph: {
       title: "Вид графа",
