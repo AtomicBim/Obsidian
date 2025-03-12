@@ -1,7 +1,15 @@
 @use "./base.scss";
 
+/* Все ссылки в проводнике делаем блеклыми */
+#explorer-ul .explorer-item a {
+  opacity: 0.65;
+  color: var(--text-muted, #888);
+  transition: all 0.2s ease;
+}
+
 // Выделение активной страницы в Explorer с высоким приоритетом
 #explorer-ul .explorer-item a[data-active="true"] {
+    opacity: 1 !important;
     background-color: rgba(var(--highlight), 0.4) !important;
     font-weight: bold !important;
     border-radius: 5px !important;
@@ -17,6 +25,7 @@
 
 // Стиль при наведении на файл
 .explorer-item a:hover {
+  opacity: 0.9;
   background-color: rgba(var(--highlight), 0.2);
   transform: translateX(3px);
   transition: all 0.2s ease;
