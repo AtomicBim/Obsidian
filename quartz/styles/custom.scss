@@ -1,3 +1,10 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* Подсветка текущей заметки в Explorer */
+.explorer-tree a.active {
+    background-color: #A3CCEE; /* Голубой фон */
+    color: #ffffff; /* Белый текст */
+    font-weight: bold; /* Жирный шрифт */
+    border-left: 4px solid #3478A3; /* Синяя полоса слева */
+    padding-left: 6px; /* Чуть больше отступ слева */
+}
