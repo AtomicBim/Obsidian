@@ -1,40 +1,18 @@
 @use "./base.scss";
 
-// Стили для активной и неактивных ссылок в Explorer
-#explorer-ul li a {
-    // Все ссылки делаем блеклыми по умолчанию
-    opacity: 0.6;
-    color: var(--gray);
-    transition: opacity 0.2s ease, color 0.2s ease;
-    
-    // При наведении делаем их чуть более заметными
-    &:hover {
-      opacity: 0.8;
-      color: var(--dark);
-    }
-    
-    // Активная ссылка выделяется тёмным цветом и полной непрозрачностью
-    &[data-active="true"] {
-      opacity: 1;
-      color: var(--dark);
-      font-weight: 500;
-      background-color: transparent; // Убираем фоновую подсветку
-      padding: 0; // Возвращаем стандартный padding
-      border-radius: 0; // Убираем скругление
-    }
-  }
-  
-  // Опционально: еще больше выделить активный раздел
-  .explorer-item {
-    position: relative;
-    
-    a[data-active="true"]::before {
-      content: "";
-      position: absolute;
-      left: -10px;
-      width: 3px;
-      height: 100%;
-      background-color: var(--secondary);
-      border-radius: 0 2px 2px 0;
+// Выделение активной страницы в Explorer
+.explorer-item {
+    a[data-active="true"] {
+      background-color: rgba(var(--highlight), 0.4); // Увеличиваем непрозрачность с 0.2 до 0.4
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 2px 6px;
+      
+      // Цвет текста активной страницы сделаем темнее
+      color: rgb(var(--highlight)) !important;
+      text-shadow: 0 0 1px rgba(0,0,0,0.2); // Добавляем легкую тень для лучшей читаемости
+      
+      // Добавляем тонкую рамку для усиления эффекта
+      box-shadow: 0 0 0 1px rgba(var(--highlight), 0.5);
     }
   }
