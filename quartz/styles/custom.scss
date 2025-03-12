@@ -1,10 +1,26 @@
 @use "./base.scss";
 
-/* Подсветка текущей заметки в Explorer */
+/* Делаем активную заметку яркой */
 .explorer-tree a.active {
     background-color: #A3CCEE; /* Голубой фон */
     color: #ffffff; /* Белый текст */
     font-weight: bold; /* Жирный шрифт */
     border-left: 4px solid #3478A3; /* Синяя полоса слева */
-    padding-left: 6px; /* Чуть больше отступ слева */
+    padding-left: 6px; /* Больше отступ слева */
+}
+
+/* Делаем остальные заметки бледными */
+.explorer-tree a {
+    opacity: 0.6; /* Полупрозрачные */
+    transition: opacity 0.3s ease-in-out; /* Плавное изменение */
+}
+
+/* При наведении — делаем заметку более видимой */
+.explorer-tree a:hover {
+    opacity: 0.9;
+}
+
+/* Активная заметка всегда 100% видима */
+.explorer-tree a.active {
+    opacity: 1;
 }
